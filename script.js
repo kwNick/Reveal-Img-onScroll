@@ -20,7 +20,7 @@ gsap.utils.toArray(".item").forEach((item, index) => {
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
             ease: "power1.out",
             duration: 2,
-            ScrollTrigger: {
+            scrollTrigger: {
                 trigger: item,
                 start: "center bottom",
                 end: "bottom top",
@@ -30,7 +30,7 @@ gsap.utils.toArray(".item").forEach((item, index) => {
                 onEnter: () => updateBackground(bgColors[index]),
                 onEnterBack: () => updateBackground(bgColors[index]),
             },
-        },
+        }
     )
 
 });
